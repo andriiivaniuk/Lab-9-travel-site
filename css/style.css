@@ -8,17 +8,17 @@
 .actual-content-wrapper{
 
     max-width: 1300px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
     font-family: 'Lato';
 }
 
 .header__top_items {
     padding-top: 50px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header__top_items > a {
@@ -26,7 +26,19 @@
     text-decoration: none;
 }
 
-.header_background-image{
+.header__logo{
+    flex-grow: 0.4;
+    width: 82px;
+    height: 31px;
+    background-image: url(../images/logo-odigo.svg);
+    background-repeat: no-repeat;
+}
+
+.header__top_items_link{
+    margin-left: 5px;
+}
+
+.header_background-image{ 
     max-width: 1440px;
     max-height: 960px;
     background-image: url(../images/header_background.png);
@@ -43,18 +55,6 @@ header{
     color: white;
     padding-left: 100px;
     padding-right: 100px;
-}
-
-.header__logo{
-    flex-grow: 1;
-    width: 82px;
-    height: 31px;
-    background-image: url(../images/logo-odigo.svg);
-    background-repeat: no-repeat;
-}
-
-.header__top_items_link{
-    margin-left: 82px;
 }
 
 .header__form{
