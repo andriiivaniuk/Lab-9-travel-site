@@ -1,0 +1,129 @@
+.all-content-wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.actual-content-wrapper{
+    
+    max-width: 1200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Lato';
+}
+
+.header{
+   
+
+}
+
+.header__top_items {
+    
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top_items > a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_background-image{
+    max-width: 1440px;
+    background-image: url(../images/header_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-overlay{
+    width: inherit;
+    background-color: rgba(17, 10, 41, 0.6);
+}
+
+header{
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header__logo{
+    flex-grow: 1;
+    width: 82px;
+    height: 31px;
+    background-image: url(../images/logo-odigo.svg);
+    background-repeat: no-repeat;
+}
+
+.header__top_items_link{
+    margin-left: 82px;
+}
+
+.header__form{
+    max-width: 1000px;
+    margin-top: 150px;
+}
+
+.header__form-subheader{
+    font-weight: lighter;
+    font-size: 3em;
+    max-width: 65%;
+}
+
+.header__form-text{
+    max-width: 55%;
+}
+
+.header__form__search-form{
+    margin-top: 50px;
+    padding-bottom: 348px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle{
+    border: 2px;
+    width: 12px;
+    height: 12px;
+
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+
+    margin-right: 12px;
+}
+
+.combine_emelent_with_circle{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    border-bottom: solid 2px rgb(200, 200, 200);
+}
+
+
+.header__form__search-form-element{
+    font-weight: 300;
+    font-size: 1.1em;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.header__form__search-form-element::placeholder{
+    font-family: 'Lato';
+    color: white;
+}
+
+.header__form__search-form-button{
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    width: 170px;
+    height: 60px;
+    background-color: rgb(36, 39, 197);
+    border: none;
+}
