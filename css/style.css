@@ -14,11 +14,14 @@
 }
 
 .header__top_items {
+    
+    font-size: 1.1em;
     padding-top: 50px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-weight:300;
 }
 
 .header__top_items > a {
@@ -48,7 +51,7 @@
 
 .image-overlay{
     max-height: 960px;
-    background-color: rgba(17, 10, 41, 0.6);
+    background-color: rgba(16, 30, 59, 0.5);
 }
 
 header{
@@ -236,41 +239,22 @@ header{
 .section-inspire__pictures-set-row2{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
-    align-content: stretch;
-}
-
-.section-inspire__picture-Mount-Fuji{
-    background-image: url(../images/mount-fuji.jpg);  
-}
-.section-inspire__picture-Kyoto {
-    background-image: url(../images/kyoto.jpg);
-}
-.section-inspire__picture-Tokyo{
-    background-image: url(../images/tokyo.jpg);
-}
-.section-inspire__picture-Niigata{
-    background-image: url(../images/niigata.jpg);
-}
-.section-inspire__picture-Sapporo{ 
-    background-image: url(../images/sapporo.jpg);
-}
-
-.section-inspire__picture-Mount-Fuji,
-.section-inspire__picture-Kyoto{
-    width: 600px;
-    height: 350px;
-    background-repeat: no-repeat;
+    justify-content:space-around;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
+.section-inspire__pictures-set-row1 img{
+    height: 374px;
+}
 
-.section-inspire__picture-Tokyo,
-.section-inspire__picture-Niigata,
-.section-inspire__picture-Sapporo{ 
-    background-repeat: no-repeat;
-    width: 400px;
-    height: 280px;
-    margin-bottom: 10px;
-    
+.section-inspire__pictures-set-row2 img{
+    height: 290px;
+}
+
+.section-inspire__pictures-set-row1 img,
+.section-inspire__pictures-set-row2 img
+{
+    width: auto;
+    object-fit: cover;
 }
