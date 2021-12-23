@@ -226,5 +226,51 @@ header{
     width: 200px;
     background-color: blue;
     margin-top: 7px;
+}
+
+.section-inspire__pictures-set-row1{
+    margin-top: 35px;
+}
+
+.section-inspire__pictures-set-row1,
+.section-inspire__pictures-set-row2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: stretch;
+}
+
+.section-inspire__picture-Mount-Fuji{
+    background-image: url(../images/mount-fuji.jpg);  
+}
+.section-inspire__picture-Kyoto {
+    background-image: url(../images/kyoto.jpg);
+}
+.section-inspire__picture-Tokyo{
+    background-image: url(../images/tokyo.jpg);
+}
+.section-inspire__picture-Niigata{
+    background-image: url(../images/niigata.jpg);
+}
+.section-inspire__picture-Sapporo{ 
+    background-image: url(../images/sapporo.jpg);
+}
+
+.section-inspire__picture-Mount-Fuji,
+.section-inspire__picture-Kyoto{
+    width: 600px;
+    height: 350px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+
+.section-inspire__picture-Tokyo,
+.section-inspire__picture-Niigata,
+.section-inspire__picture-Sapporo{ 
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 280px;
+    margin-bottom: 10px;
     
 }
