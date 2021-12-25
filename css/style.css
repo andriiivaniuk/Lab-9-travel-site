@@ -298,12 +298,10 @@ header{
 
 .section-inspire__pictures-set-row1 img{
     max-height: 374px;
-    min-width: 300px;
 }
 
 .section-inspire__pictures-set-row2 img{
     max-height: 293px;
-    min-width: 300px;
 }
 
 .section-inspire__pictures-set-row1 img,
@@ -327,6 +325,7 @@ header{
 .Sapporo-element{
     position: relative;
     flex-grow: 1;
+    flex-basis: 300px;
 }
 
 .Mount-Fuji-element span,
@@ -363,6 +362,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-grow: 1;
     gap: 60px;
 }
 
