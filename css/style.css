@@ -7,7 +7,7 @@ html{
     justify-content: center;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 800px){
     .actual-content-wrapper{
 
         padding-left: 10px;
@@ -19,9 +19,18 @@ html{
         align-items:flex-start;
         
     }
+
+    .header__top_items{
+        flex-direction: column;
+    }
+
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 800px){
     .actual-content-wrapper{
 
         padding-left: 90px;
@@ -32,6 +41,16 @@ html{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .header__top_items{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .header{
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -240,7 +259,6 @@ header{
     text-decoration: none;
     color: blue;
     text-transform: uppercase;
-    padding-left: 10px;
 }
 
 .section-inspire__header-set{
@@ -272,25 +290,29 @@ header{
 .section-inspire__pictures-set-row2{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-between;
     gap: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     
 }
 
 .section-inspire__pictures-set-row1 img{
-    height: 374px;
+    max-height: 374px;
+    min-width: 300px;
 }
 
 .section-inspire__pictures-set-row2 img{
-    height: 293px;
+    max-height: 293px;
+    min-width: 300px;
 }
 
 .section-inspire__pictures-set-row1 img,
 .section-inspire__pictures-set-row2 img
 {
-    width: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .section-inspire__image-overlay{
@@ -304,6 +326,7 @@ header{
 .Niigata-element,
 .Sapporo-element{
     position: relative;
+    flex-grow: 1;
 }
 
 .Mount-Fuji-element span,
@@ -321,7 +344,7 @@ header{
 }
 
 .section2-image-overlay{
-    height: calc(100% - 3px);
+    height: 100%;
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: absolute;
