@@ -172,7 +172,7 @@ header{
     text-transform: uppercase;
     width: 170px;
     height: 60px;
-    background-color: rgb(36, 39, 197);
+    background-color: #1B7DFF;
     border: none;
 }
 
@@ -362,20 +362,27 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-grow: 1;
-    gap: 60px;
+    
+    gap: 75px;
+    
 }
 
-.location-in-focus > img{
-    object-fit: contain;
-    height: 350px;
-    width: auto;
+.location-in-focus__set-element{
+   flex-basis: 43%;
+   flex-grow: 1;
+}
+
+.location-in-focus__set-element > img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .location-in-focus__text-element{
-    padding-left: 50px;
-    padding-right: 50px;
-    max-width: 500px;
+    padding-left: 6%;
+    padding-right: 6%;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -384,7 +391,7 @@ header{
 .location-in-focus__text-element__header{
     padding-top: 18px;
     font-size: 1.8em;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 75px;
     line-height: 40px;
 }
@@ -399,4 +406,95 @@ header{
     text-decoration: none;
     color: rgb(89, 89, 241);
     text-transform: uppercase;
+}
+
+.today-places-to-visit{
+    margin-top: 150px;
+}
+
+.today-places-to-visit__elements-set{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.today-places-to-visit__element{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.today-places-to-visit__element__picture{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.today-places-to-visit__element__picture-info{
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    height: 55px;
+    width:inherit;
+    
+    color: white;
+
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.today-places-to-visit__element__picture-info__picture-name{
+    margin-left: 25px;
+}
+
+.today-places-to-visit__element__picture-info__picture-likes{
+    
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.today-places-to-visit__element__picture-overlay{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.6;
+    height: 55px;
+    width: 100%;
+}
+
+.today-places-to-visit__element__picture > img{
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.today-places-to-visit__element__text{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+}
+
+.today-places-to-visit__element__button{
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: white;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    background-color: #006DFE;
+    border: none;
+    line-height: 19.2px;
 }
