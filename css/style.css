@@ -2,16 +2,19 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    margin: 0px;
+}
+
 .all-content-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 @media only screen and (max-width: 768px){
     .actual-content-wrapper{
-
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -80,7 +83,6 @@ html{
 
 @media only screen and (min-width: 768px){
     .actual-content-wrapper{
-
         padding-left: 90px;
         padding-right: 90px;
     }
