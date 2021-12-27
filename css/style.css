@@ -4,7 +4,9 @@ html{
 
 .all-content-wrapper{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media only screen and (max-width: 800px){
@@ -499,4 +501,38 @@ header{
     line-height: 19.2px;
 }
 
-/* test  3*/
+.secion-video{
+    margin-top: 150px;
+}
+
+.section-video__video-set{
+    max-width: 1440px;
+    max-height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-video__video-set > img{
+ 
+    object-fit: cover;
+    min-height: 350px;
+    width: 100%;
+    display: block;
+}
+
+.video-button{
+    position: absolute;
+    align-self: center;
+    height: fit-content;
+}
+
+.section-video__img-overlay{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color:  rgba(21, 24, 36, 0.4);
+
+}
