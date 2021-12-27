@@ -9,7 +9,7 @@ html{
     align-items: center;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 768px){
     .actual-content-wrapper{
 
         padding-left: 10px;
@@ -19,7 +19,6 @@ html{
     .header__form__search-form{
         flex-direction: column;
         align-items:flex-start;
-        
     }
 
     .header__top_items{
@@ -27,12 +26,59 @@ html{
     }
 
     .header{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
+
+    .header__form{
+        margin-top: 40px;
+    }
+
+    .header__form-subheader{
+        max-width: 100%;
+        font-size: 2em;
+    }
+
+    .header__form__search-form{
+        margin-top: 30px;
+        margin-bottom: 220px;
+    }
+
+    .footer__set{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .today-places-to-visit__elements-set{
+        gap: 10px;
+    }
+
+    .today-places-to-visit__element{
+        flex-basis: 80%;
+    }
+
+    .location-in-focus{
+        gap: 5px;
+    }
+
+    .location-in-focus__set-element{
+        flex-basis: 47%;
+    }
+
+    .location-in-focus__text-element{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .location-in-focus__text-element__header{
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 768px){
     .actual-content-wrapper{
 
         padding-left: 90px;
@@ -54,16 +100,61 @@ html{
         padding-left: 100px;
         padding-right: 100px;
     }
+
+    .header__form{
+        margin-top: 150px;
+    }
+
+    .header__form-subheader{
+        max-width: 65%;
+        font-size: 3em;
+    }
+
+    .header__form__search-form{
+        margin-top: 50px;
+        margin-bottom: 348px;
+    }
+
+    .footer__set{
+        flex-direction: row;
+    }
+
+    .today-places-to-visit__elements-set{
+        gap: 50px;
+    }
+
+    .today-places-to-visit__element{
+        flex-basis: 30%;
+    }
+
+    .location-in-focus{
+        flex-basis: 43%;
+        gap: 75px;
+    }
+
+    .location-in-focus__set-element{
+        flex-basis: 43%;
+    }
+
+    .location-in-focus__text-element{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .location-in-focus__text-element__header{
+        font-size: 1.8em;
+        margin-bottom: 75px;
+        line-height: 40px;
+    }
+
 }
 
 .actual-content-wrapper{
-
     max-width: 1300px;
     font-family: 'Lato';
 }
 
 .header__top_items {
-    
     font-size: 1.1em;
     padding-top: 50px;
     display: flex;
@@ -96,6 +187,7 @@ html{
     background-image: url(../images/header_background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .image-overlay{
@@ -111,13 +203,13 @@ header{
 
 .header__form{
     max-width: 1000px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .header__form-subheader{
     font-weight: lighter;
-    font-size: 3em;
-    max-width: 65%;
+    /* font-size: 3em; */
+    /* max-width: 65%; */
 }
 
 .header__form-text{
@@ -127,8 +219,8 @@ header{
 }
 
 .header__form__search-form{
-    margin-top: 50px;
-    padding-bottom: 348px;
+    /* margin-top: 50px;
+    padding-bottom: 348px; */
     max-width: 900px;
     display: flex;
     flex-wrap: wrap;
@@ -365,12 +457,12 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     
-    gap: 75px;
+    /* gap: 75px; */
     
 }
 
 .location-in-focus__set-element{
-   flex-basis: 43%;
+   /* flex-basis: 43%; */
    flex-grow: 1;
 }
 
@@ -382,8 +474,8 @@ header{
 }
 
 .location-in-focus__text-element{
-    padding-left: 6%;
-    padding-right: 6%;
+   /* padding-left: 6%;
+    padding-right: 6%; */
     
     display: flex;
     flex-direction: column;
@@ -392,10 +484,10 @@ header{
 
 .location-in-focus__text-element__header{
     padding-top: 18px;
-    font-size: 1.8em;
+    /* font-size: 1.8em; */
     font-weight: 700;
-    margin-bottom: 75px;
-    line-height: 40px;
+    /* margin-bottom: 75px; */
+    /* line-height: 40px; */
 }
 
 .location-in-focus__text-element__info{
@@ -419,13 +511,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 50px;
+    
 }
 
 .today-places-to-visit__element{
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    /*flex-basis: 30%;*/
     flex-grow: 1;
 }
 
@@ -551,7 +643,7 @@ header{
     padding-top: 120px;
     display: flex;   
     gap: 12%;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     margin-right: 7%;
 }
 
@@ -589,12 +681,3 @@ header{
     font-size: 1.12em;
     font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
