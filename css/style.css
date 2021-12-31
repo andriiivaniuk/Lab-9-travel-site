@@ -49,6 +49,7 @@ body{
     }
 
     .footer__set{
+        padding-left: 15px;
         flex-direction: column;
         margin-bottom: 60px;
     }
@@ -78,6 +79,19 @@ body{
         font-size: 1.2em;
         margin-bottom: 30px;
         line-height: 20px;
+    }
+
+    .section__benefits-list{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .section__header{
+        margin-left: 30px;
+    }
+
+    .section__benefits-list-element {
+        max-width: 85%;
     }
 
 }
@@ -148,6 +162,19 @@ body{
         font-size: 1.8em;
         margin-bottom: 75px;
         line-height: 40px;
+    }
+
+    .section__benefits-list{
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    .section__header{
+        margin-left: 90px;
+    }
+
+    .section__benefits-list-element {
+        max-width: 27%;
     }
 
 }
@@ -293,14 +320,14 @@ header{
 .section__header{
     font-size: 2em; font-weight: 600;
     padding-top: 85px;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     padding-bottom: 80px;
 }
 
 .section__benefits-list{
     
-    margin-right: 70px;
-    margin-left: 70px;
+    /* margin-right: 70px;
+    margin-left: 70px; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -309,7 +336,7 @@ header{
 .section__benefits-list-element{
     display: flex;
     flex-direction: column;
-    max-width: 28%;
+    /* max-width: 28%; */
     min-width: 170px;
     margin-bottom: 120px;
 }
@@ -682,6 +709,7 @@ header{
 }
 
 .footer__set-element > a{
+    max-width: 100%;
     font-size: 16px;
     font-weight: 400;
     color: white;
