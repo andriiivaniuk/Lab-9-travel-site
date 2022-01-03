@@ -258,6 +258,7 @@ header{
 }
 
 .header__form-text{
+    display: block;
     min-width: 250px;
     max-width: 55%;
     line-height: 24px;
@@ -314,6 +315,27 @@ header{
     background-color: var(--color-light-blue);
     border: none;
 }
+
+.blue-link-with-arrow{
+    position: relative;
+    color: var(--color-light-blue);
+    text-decoration: none;
+    text-transform: uppercase;
+    word-wrap:break-word;
+}
+
+.blue-link-with-arrow::after{
+    
+    display: inline-block;
+    height: 10px;
+    width: 33px;
+    content: '';
+    background-image: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    
+} 
+
 
 .section{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -683,7 +705,7 @@ header{
 
 .footer__set{
 
-    
+    margin-right: 10px;
     width: 100%;
     max-width: 1200px;
     padding-top: 120px;
