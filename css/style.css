@@ -2,6 +2,7 @@
     --color-light-blue: #006DFE;
     --footer-color: #0E1D28;
     --header-image-overlay-color: rgba(16, 30, 59, 0.5);
+    --animation-speed: 0.23s;
 }
 
 html{
@@ -73,6 +74,7 @@ body{
     }
 
     .location-in-focus__set-element{
+        overflow: hidden;
         flex-basis: 47%;
     }
 
@@ -100,6 +102,10 @@ body{
         max-width: 85%;
     }
 
+    .section-inspire__header-set{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -181,6 +187,10 @@ body{
 
     .section__benefits-list-element {
         max-width: 27%;
+    }
+
+    .section-inspire__header-set{
+        flex-direction: row;
     }
 
 }
@@ -424,14 +434,16 @@ header{
 
 .section-inspire__header-set{
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     align-items: center;
 }
 
 .section-inspire__header{
+    display: block;
     font-size: 2.0em;
-    width: max-content;
+    width:fit-content;
+    
 }
 
 .section-inspire__header::after{
@@ -442,7 +454,7 @@ header{
     width: 50%;
     background-color: var(--color-light-blue);
     margin-top: 7px;
-    transition: 0.5s ease-in-out;
+    transition: var(--animation-speed) ease-in-out;
     
 }
 
@@ -480,7 +492,7 @@ header{
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: 0.2s;
+    transition: var(--animation-speed);
 }
 
 .section-inspire__image-overlay{
@@ -572,7 +584,7 @@ header{
 }
 
 .location-in-focus__set-element > img{
-    transition: 0.2s;
+    transition: var(--animation-speed);
     display: block;
     object-fit: cover;
     height: 100%;
@@ -636,12 +648,21 @@ header{
     position: relative;
     height: auto;
     width: 100%;
+    overflow: hidden;
+}
+
+.today-places-to-visit__element__picture:hover >
+.today-places-to-visit__element__picture-info,
+.today-places-to-visit__element__picture:hover >
+.today-places-to-visit__element__picture-overlay
+{
+    bottom: 0;
 }
 
 .today-places-to-visit__element__picture-info{
     position: absolute;
 
-    bottom: 0;
+    
     left: 0;
     height: 55px;
     width:inherit;
@@ -655,6 +676,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    bottom: -55px;
+
+    transition: var(--animation-speed) ease-out;
 }
 
 .today-places-to-visit__element__picture-info__picture-name{
@@ -667,15 +692,18 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .today-places-to-visit__element__picture-overlay{
     position: absolute;
-    bottom: 0;
+    bottom: -55px;
     background-color: black;
     opacity: 0.6;
     height: 55px;
     width: 100%;
+
+    transition: var(--animation-speed) ease-out;
 }
 
 .today-places-to-visit__element__picture > img{
@@ -702,7 +730,32 @@ header{
     background-color: var(--color-light-blue);
     border: none;
     line-height: 19.2px;
+    position: relative;
 }
+
+.today-places-to-visit__element__button::after{
+    display: block;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0%;
+    background-color: rgb(180, 30, 43);
+    transition: var(--animation-speed);
+    bottom: 0;
+    left: 0;
+    opacity: 25%;
+}
+
+.today-places-to-visit__element__button:hover::after
+{
+    width: 100%;
+}
+
+.today-places-to-visit__element__button:hover{
+    cursor: pointer;
+}
+
+
 
 .secion-video{
     margin-top: 150px;
