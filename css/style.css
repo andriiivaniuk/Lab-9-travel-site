@@ -431,17 +431,25 @@ header{
 
 .section-inspire__header{
     font-size: 2.0em;
+    width: max-content;
 }
 
 .section-inspire__header::after{
-    position:absolute;
+    
     display: block;
     content: '';
     height: 3px;
-    width: 200px;
+    width: 50%;
     background-color: var(--color-light-blue);
     margin-top: 7px;
+    transition: 0.5s ease-in-out;
+    
 }
+
+.section-inspire__header:hover::after{
+    width: 100%;
+}
+
 
 .section-inspire__pictures-set-row1{
     margin-top: 35px;
@@ -472,6 +480,7 @@ header{
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: 0.2s;
 }
 
 .section-inspire__image-overlay{
@@ -484,6 +493,7 @@ header{
 .Tokyo-element,
 .Niigata-element,
 .Sapporo-element{
+    overflow: hidden;
     position: relative;
     flex-grow: 1;
     flex-basis: 300px;
@@ -515,6 +525,35 @@ header{
                  0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
 
+.Mount-Fuji-element:hover img,
+.Kyoto-element:hover img,
+.Tokyo-element:hover img,
+.Niigata-element:hover img,
+.Sapporo-element:hover img{
+    transform: scale(1.05);
+}
+
+.Mount-Fuji-element:hover,
+.Kyoto-element:hover,
+.Tokyo-element:hover,
+.Niigata-element:hover,
+.Sapporo-element:hover{  
+    cursor:pointer;
+}
+
+@keyframes hover-element-animation{
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.98);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 .location-in-focus{
@@ -523,7 +562,6 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
     /* gap: 75px; */
     
 }
@@ -534,10 +572,16 @@ header{
 }
 
 .location-in-focus__set-element > img{
+    transition: 0.2s;
     display: block;
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.location-in-focus__set-element > img:hover{
+    cursor:pointer;
+    transform: scale(1.05);
 }
 
 .location-in-focus__text-element{
