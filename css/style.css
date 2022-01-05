@@ -21,7 +21,80 @@ body{
     align-items: center;
 }
 
+#toggle-input{
+    display: none;
+}
+
+
+@media only screen and (max-width: 499px){
+    .header__top_items > .header__top_items_link{
+        display: none;
+    }
+
+    .nav__hamburger-button{
+       cursor: pointer;
+       position: relative;
+       transition: var(--animation-speed);
+    }
+
+    .nav__hamburger-button:hover{
+        transform: rotate(90deg);
+    }
+
+    .nav__hamburger-button::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 0%;
+        transition: var(--animation-speed) ease-in-out;
+        background-color: white;
+    }
+
+    .nav__hamburger-button::before{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 3px;
+        height: 0;
+        transition: var(--animation-speed) ease-in-out;
+        background-color: white;
+    }
+
+    .nav__hamburger-button:hover::after{
+        height: 100%;
+    }
+
+    .nav__hamburger-button:hover::before{
+        height: 100%;
+    }
+
+    .nav__hamburger-button img{
+        object-fit: contain;
+        display: block;
+        max-width: 35px;
+        color-adjust: var(--color-light-blue);
+    }
+
+    #toggle-input:checked ~ a{
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    .nav__hamburger-button{
+        display: none;
+    }
+    
+}
+
+
 @media only screen and (max-width: 768px){
+
+    
     .actual-content-wrapper{
         padding-left: 10px;
         padding-right: 10px;
@@ -100,6 +173,8 @@ body{
 }
 
 @media only screen and (min-width: 768px){
+    
+    
     .actual-content-wrapper{
         padding-left: 90px;
         padding-right: 90px;
@@ -836,6 +911,10 @@ header{
     width: 100%;
     display: block;
     object-fit:cover;
+}
+
+.video-file:hover{
+    cursor: pointer;
 }
 
 .section-video__video-set{
