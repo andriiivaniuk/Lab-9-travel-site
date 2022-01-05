@@ -1,6 +1,7 @@
 :root{
     --color-light-blue: #006DFE;
     --footer-color: #0E1D28;
+    --button-overlay-color: rgb(136, 11, 22);
     --header-image-overlay-color: rgba(16, 30, 59, 0.5);
     --animation-speed: 0.23s;
 }
@@ -114,6 +115,10 @@ body{
         margin-top: 40px;
     }
 
+    .combine_emelent_with_circle{
+        padding-right: 0px;
+    }
+
     .header__form-subheader{
         max-width: 100%;
         font-size: 2em;
@@ -160,6 +165,7 @@ body{
 
     .section__header{
         margin-left: 30px;
+        font-size: 1.5em;
     }
 
     .section__benefits-list-element {
@@ -169,6 +175,10 @@ body{
     .section-inspire__header-set{
         flex-direction: column;
         gap: 20px;
+    }
+
+    .footer__set__logo-element{
+        justify-content: center;
     }
 }
 
@@ -201,10 +211,15 @@ body{
         margin-top: 150px;
     }
 
+    .combine_emelent_with_circle{
+        padding-right: 20px;
+    }
+
     .header__form-subheader{
         max-width: 65%;
         font-size: 3em;
     }
+    
 
     .footer__set{
         flex-direction: row;
@@ -245,6 +260,7 @@ body{
 
     .section__header{
         margin-left: 100px;
+        font-size: 2em;
     }
 
     .section__benefits-list-element {
@@ -253,6 +269,10 @@ body{
 
     .section-inspire__header-set{
         flex-direction: row;
+    }
+
+    .footer__set__logo-element{
+        justify-content: flex-start;
     }
 
 }
@@ -295,8 +315,6 @@ body{
 .header__logo{
     flex-grow: 0.4;
     height: 31px;
-    /* background-image: url(../images/logo-odigo.svg);
-    background-repeat: no-repeat; */
     display: flex;
 }
 
@@ -393,7 +411,7 @@ header{
 .combine_emelent_with_circle{
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     padding-bottom: 25px;
     border-bottom: solid 2px rgb(200, 200, 200);
 }
@@ -429,7 +447,7 @@ header{
     content: '';
     height: 100%;
     width: 0%;
-    background-color: rgb(180, 30, 43);
+    background-color: var(--button-overlay-color);
     transition: var(--animation-speed);
     bottom: 0;
     left: 0;
@@ -476,7 +494,7 @@ header{
 
 .section__header{
     width: fit-content;
-    font-size: 2em;
+    /* font-size: 2em; */
     font-weight: 600;
     padding-top: 85px;
     /* margin-left: 90px; */
@@ -591,7 +609,6 @@ header{
 }
 
 .section-inspire__header::after{
-    
     display: block;
     content: '';
     height: 3px;
@@ -599,7 +616,6 @@ header{
     background-color: var(--color-light-blue);
     margin-top: 7px;
     transition: var(--animation-speed) ease-in-out;
-    
 }
 
 .section-inspire__header:hover::after{
@@ -698,21 +714,6 @@ header{
     cursor:pointer;
 }
 
-@keyframes hover-element-animation{
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(0.98);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
 .location-in-focus{
     
     margin-top: 120px;
@@ -807,7 +808,6 @@ header{
 .today-places-to-visit__element__picture-info{
     position: absolute;
 
-    
     left: 0;
     height: 55px;
     width:inherit;
@@ -884,7 +884,7 @@ header{
     content: '';
     height: 100%;
     width: 0%;
-    background-color: rgb(180, 30, 43);
+    background-color: var(--button-overlay-color);
     transition: var(--animation-speed);
     bottom: 0;
     left: 0;
@@ -904,7 +904,6 @@ header{
     margin-top: 150px;
     display: flex;
     justify-content: center;
-    background-color: rgb(185, 118, 19);
 }
 
 .video-file{
@@ -915,38 +914,6 @@ header{
 
 .video-file:hover{
     cursor: pointer;
-}
-
-.section-video__video-set{
-    max-width: 1440px;
-    max-height: 600px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.section-video__video-set > img{
- 
-    object-fit: cover;
-    min-height: 350px;
-    width: 100%;
-    display: block;
-}
-
-.video-button{
-    position: absolute;
-    align-self: center;
-    height: fit-content;
-}
-
-.section-video__img-overlay{
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-    background-color:  rgba(21, 24, 36, 0.4);
-
 }
 
 .footer{
@@ -971,13 +938,8 @@ header{
 .footer__set__logo-element{
     flex-basis: 50%;
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     padding-left: 5%;
-}
-
-.footer__set__logo-element{
-    flex-grow: 1;
-    display: flex;
 }
 
 .footer__set__logo-element__logo-wrapper{
