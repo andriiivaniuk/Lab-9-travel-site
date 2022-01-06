@@ -26,7 +26,6 @@ body{
     display: none;
 }
 
-
 @media only screen and (max-width: 499px){
     .header__top_items > .header__top_items_link{
         display: none;
@@ -94,7 +93,6 @@ body{
 
 
 @media only screen and (max-width: 768px){
-
     
     .actual-content-wrapper{
         padding-left: 10px;
@@ -183,7 +181,6 @@ body{
 }
 
 @media only screen and (min-width: 768px){
-    
     
     .actual-content-wrapper{
         padding-left: 90px;
@@ -750,6 +747,23 @@ header{
     /* margin-bottom: 75px; */
     /* line-height: 40px; */
 }
+
+.location-in-focus__text-element__header::after{
+    position: relative;
+    display: block;
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: var(--color-light-blue);
+    margin-top: 7px;
+    transition: var(--animation-speed) ease-in-out;
+}
+
+.location-in-focus__text-element__header:hover::after
+{
+    width: 100%;
+}
+
 
 .location-in-focus__text-element__info{
     margin-bottom: 60px;
