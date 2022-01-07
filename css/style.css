@@ -81,11 +81,36 @@ body{
         display: block;
     }
 
+    .location-in-focus__text-element__info{
+        margin-bottom: 20px;
+    }
+
+    .location-in-focus__set-item{
+        flex-basis: 85%;
+        margin-bottom: 40px;
+    }
+
+    .location-in-focus__set-item-img{
+       aspect-ratio: 1/1;
+    }
+
 }
 
 @media only screen and (min-width: 500px){
     .nav__hamburger-button{
         display: none;
+    }
+
+    .location-in-focus__text-element__info{
+        margin-bottom: 60px;
+    }
+
+    .location-in-focus__set-item{
+        flex-basis: 47%;
+    }
+
+    .location-in-focus__set-item-img{
+       aspect-ratio: auto;
     }
 
 }
@@ -135,9 +160,9 @@ body{
         gap: 5px;
     }
 
-    .location-in-focus__set-element{
+    .location-in-focus__set-item{
         overflow: hidden;
-        flex-basis: 47%;
+        /* flex-basis: 47%; */
     }
 
     .location-in-focus__text-element{
@@ -145,7 +170,7 @@ body{
         padding-right: 3px;
     }
 
-    .location-in-focus__text-element__header{
+    .location-in-focus__text-header{
         font-size: 1.2em;
         margin-bottom: 30px;
         line-height: 20px;
@@ -238,7 +263,7 @@ body{
         gap: 75px;
     }
 
-    .location-in-focus__set-element{
+    .location-in-focus__set-item{
         flex-basis: 43%;
     }
 
@@ -247,7 +272,7 @@ body{
         padding-right: 6%;
     }
 
-    .location-in-focus__text-element__header{
+    .location-in-focus__text-header{
         font-size: 1.8em;
         margin-bottom: 75px;
         line-height: 40px;
@@ -630,19 +655,17 @@ header{
 }
 
 .location-in-focus{
-    
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
-.location-in-focus__set-element{
+.location-in-focus__set-item{
    flex-grow: 1;
 }
 
-.location-in-focus__set-element > img{
+.location-in-focus__set-item-img{
     transition: var(--animation-speed);
     display: block;
     object-fit: cover;
@@ -650,7 +673,7 @@ header{
     width: 100%;
 }
 
-.location-in-focus__set-element > img:hover{
+.location-in-focus__set-item-img:hover{
     cursor:pointer;
     transform: scale(1.05);
 }
@@ -661,21 +684,14 @@ header{
     align-items: flex-start;
 }
 
-.location-in-focus__text-element__header{
+.location-in-focus__text-header{
     padding-top: 18px;
     font-weight: 700;
 }
 
 .location-in-focus__text-element__info{
-    margin-bottom: 60px;
     font-size: 16px;
     line-height: 24px;
-}
-
-.location-in-focus__text-element__link{
-    text-decoration: none;
-    color: var(--color-light-blue);
-    text-transform: uppercase;
 }
 
 .today-places-to-visit{
@@ -758,7 +774,7 @@ header{
     transition: var(--animation-speed) ease-out;
 }
 
-.today-places-to-visit__picture > img{
+.today-places-to-visit__picture-img{
     height: auto;
     width: 100%;
     display: block;
@@ -827,13 +843,13 @@ header{
     padding-left: 5%;
 }
 
-.footer__set__logo-element__logo-wrapper{
+.footer__set__logo-wrapper{
     flex-grow: 1;
     max-width: 170px;
     max-height: 65px;
 }
 
-.footer__set__logo-element__logo-wrapper img{
+.footer__set__logo-img{
     width: 100%;
     height: auto;
     object-fit: cover;
