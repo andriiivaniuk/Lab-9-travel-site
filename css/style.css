@@ -29,9 +29,11 @@ body{
 @media only screen and (max-width: 499px){
     .header__top_items_link{
         display: none;
+        margin-top: 10px;
     }
 
     .nav__hamburger-button{
+        margin-top: 10px;
        cursor: pointer;
        position: relative;
        transition: var(--animation-speed);
@@ -120,6 +122,10 @@ body{
 
 
 @media only screen and (max-width: 768px){
+
+    .header__top_items_link{
+        margin-top: 5px;
+    }
     
     .actual-content-wrapper{
         padding-left: 10px;
@@ -128,7 +134,6 @@ body{
 
     .header__top_items{
         flex-direction: column;
-        gap: 10px;
     }
 
     .header{
@@ -152,7 +157,7 @@ body{
     }
 
     .today-places-to-visit__elements-set{
-        gap: 10px;
+        margin-top: 10px;
     }
 
     .today-places-to-visit__element{
@@ -160,6 +165,8 @@ body{
     }
 
     .location-in-focus{
+        margin-top: none;
+        
         gap: 5px;
     }
 
@@ -195,7 +202,6 @@ body{
 
     .section-inspire__header-set{
         flex-direction: column;
-        gap: 20px;
     }
 
     .footer__set__logo-element{
@@ -207,6 +213,8 @@ body{
     }
 
     .input_wrapper{
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding-bottom: 10px;
         padding-right: 0;
     }
@@ -254,7 +262,7 @@ body{
     }
 
     .today-places-to-visit__elements-set{
-        gap: 50px;
+        margin-top: 50px;
     }
 
     .today-places-to-visit__element{
@@ -264,6 +272,7 @@ body{
     .location-in-focus{
         flex-basis: 43%;
         gap: 75px;
+    
     }
 
     .location-in-focus__set-item{
@@ -310,6 +319,8 @@ body{
     .input_wrapper{
         padding-bottom: 25px;
         padding-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .input_wrapper::before{
@@ -332,7 +343,7 @@ body{
         margin-bottom: 220px;
         flex-direction: column;
         align-items:flex-start;
-        gap: 30px;
+        
     }
 }
 
@@ -495,11 +506,9 @@ header{
 }
 
 .section__benefits-list{
-    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .section__benefits-list-element{
@@ -509,6 +518,7 @@ header{
     min-width: 170px;
     margin-bottom: 120px;
     transition: var(--animation-speed);
+    padding-right: 10px;
 }
 
 .section__benefits-list-element:hover{
@@ -568,7 +578,7 @@ header{
 }
 
 .section-inspire__header{
-    
+    padding-bottom: 20px;
     font-size: 2.0em;
     width:fit-content;
 }
@@ -582,8 +592,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 10px;
 }
 
 .section-inspire__pictures-set-row-top img{
@@ -614,6 +622,8 @@ header{
 .Tokyo-element,
 .Niigata-element,
 .Sapporo-element{
+
+    margin: 5px;
     overflow: hidden;
     position: relative;
     flex-grow: 1;
@@ -702,7 +712,8 @@ header{
 }
 
 .today-places-to-visit__elements-set{
-    margin-top: 50px;
+    
+    gap: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -864,12 +875,12 @@ header{
     color: white;
     flex-direction: column;
     line-height: 24px;
-    gap: 3px;
     flex-grow: 1;
 }
 
 
 .footer__set__link{
+    margin-top: 3px;
     width: fit-content;
     font-size: 16px;
     font-weight: 400;
