@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Site</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="reset" href="css/reset.css">
-    <link rel="fonts" href="css/fonts.css">
-    <link rel="fonts_location" href="/fonts/">
+    
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="/fonts/">
     
 </head>
 
@@ -20,43 +20,49 @@
                  <div class="actual-content-wrapper">
                     <header class="header">
                         <nav class="header__top_items">
-                            <div class="header__logo"></div>
-                            <a class="header__top_items_link" href="#section-benefits">Articles</a>
-                            <a class="header__top_items_link" href="#section-inspire">Locations</a>
-                            <a class="header__top_items_link" href="#secion-video">Videos</a>
-                            <a class="header__top_items_link" href="">Sign in</a>
+                            <div class = "header__logo">
+                                <a href="#">
+                                    <img src="images/logo-odigo.svg" alt="logo-odigo">
+                                </a>
+                            </div>
+                            <input type="checkbox" id="toggle-input">
+                            <label class="nav__hamburger-button" for="toggle-input">
+                                <img class ="hamburger" src="images/hamburger-white.png" alt="hamburger-menu-picture">
+                            </label>
+                            
+
+                            <a class="header__top_items_link animating-link" href="#section-benefits">Articles</a>
+                            <a class="header__top_items_link animating-link" href="#section-inspire">Locations</a>
+                            <a class="header__top_items_link animating-link" href="#secion-video">Videos</a>
+                            <a class="header__top_items_link animating-link" href="">Sign in</a>
                         </nav>
                         <form class="header__form">
                             <h1 class = "header__form-subheader">Discover amazing places in Japan</h1>
-                            <div class="header__form-text">
+                            <span class="header__form-text">
                                 Jump off balcony, onto stranger's head.
                                 Chase ball of string hide when guests come over.
                                 Being gorgeous with belly side up i could pee on this
                                 if i had the energy but under the bed, for attack the child,
                                 open the door,
-                            </div>
+                            </span>
                             <!-- Header search form-->
                             <div class = "header__form__search-form">
-                                <div class = "combine_emelent_with_circle">
-                                    <div class="circle"> 
-                                    </div>
+                                <div class = "input_wrapper">
                                     <input type="text" placeholder = 'What would you like to do?'
                                     class = "header__form__search-form-element">
                                 </div>
-                                <div class = "combine_emelent_with_circle">
-                                    <div class="circle">
-                                    </div>    
+                                <div class = "input_wrapper"> 
                                     <input type="text" placeholder = 'Where would you like to go?'
                                     class = "header__form__search-form-element">
                                 </div> 
-                                <button class = "header__form__search-form-button">
+                                <button class = "header__form__search-form-button animating-button">
                                     Search
                                 </button>
                             </div>
                         </form>
                     </header>
                     <section class = "section" id = "section-benefits"> 
-                        <h2 class = "section__header">
+                        <h2 class = "animating-header-full section__header">
                             Benefits of Odigo
                         </h2>
                         <div class = "section__benefits-list">
@@ -65,19 +71,17 @@
                                 <div class = "section__benefits__list__welcome-icon">
                                     <img src= "images/pagoda.png" alt="pagoda">
                                 </div>
-
-                                <div class = "section__benefits__list__welcome-header">
+                                <span class = "section__benefits__list__welcome-header">
                                     Welcome to Odigo
-                                </div>
-
-                                <div class = "section__benefits__list__welcome_text">
+                                </span>
+                                <span class = "section__benefits__list__welcome_text">
                                     Jump off balcony, onto stranger's head.
                                     Chase ball of string hide when guests come over.
-                                </div>
+                                </span>
 
                                 <div class = "section__benefits__list__welcome_link">
-                                    <a href=" "> Learn More &#160 &#160 &#160
-                                        <img src="images/arrow.svg" alt="arrow">
+                                    <a class="blue-link-with-arrow" href="">
+                                        Learn More
                                     </a>
                                 </div>
                             </div>
@@ -87,18 +91,17 @@
                                     <img src= "images/avatar.png" alt="avatar">
                                 </div>
 
-                                <div class = "section__benefits__list__guide-header">
+                                <span class = "section__benefits__list__guide-header">
                                     <strong>Your Personal Japan Guide</strong> 
-                                </div>
-
-                                <div class = "section__benefits__list__guide_text">
+                                </span>
+                                <span class = "section__benefits__list__guide_text">
                                     Jump off balcony, onto stranger's head.
                                     Chase ball of string hide when guests come over.
-                                </div>
+                                </span>
 
                                 <div class = "section__benefits__list__guide_link">
-                                    <a href=" ">Learn More &#160 &#160 &#160
-                                        <img src="images/arrow.svg" alt="arrow">
+                                    <a class="blue-link-with-arrow" href="">
+                                            Learn More
                                     </a>
                                 </div>
                             </div>
@@ -107,19 +110,16 @@
                                 <div class = "section__benefits__list__local-icon">
                                     <img src= "images/shop.png" alt="local shop">
                                 </div>
-
-                                <div class = "section__benefits__list__local-header">
+                                <span class = "section__benefits__list__local-header">
                                     <strong>Promoting Local Businesses</strong> 
-                                </div>
-
-                                <div class = "section__benefits__list__local_text">
+                                </span>
+                                <span class = "section__benefits__list__local_text">
                                     Jump off balcony, onto stranger's head.
                                     Chase ball of string hide when guests come over.
-                                </div>
-
+                                </span>
                                 <div class = "section__benefits__list__local_link">
-                                    <a href=" "> Learn More &#160 &#160 &#160
-                                        <img src="images/arrow.svg" alt="arrow">
+                                    <a class="blue-link-with-arrow" href="">
+                                        Learn More
                                     </a>
                                 </div>
                             </div> <!--list elemnt closed-->
@@ -127,100 +127,104 @@
                     </section>
                     <section class = "section-inspire" id = "section-inspire">
                         <div class = "section-inspire__header-set">
-                            <div class = "section-inspire__header">Get inspired for your next trip
-                            </div>
-                            <a href=" "> View All &#160 &#160 &#160 
-                                <img src="images/arrow.svg" alt="arrow">
+                            <span class = "section-inspire__header animating-header-half">
+                                Get inspired for your next trip
+                            </span>
+                            <a class="blue-link-with-arrow" href="">
+                                View All
                             </a>
                         </div>
-                        <div class="section-inspire__pictures-set-row1">
+                        <div class="section-inspire__pictures-set-row-top">
                             <div class = "Mount-Fuji-element">
                                 <img src="images/mount-fuji.png" alt="Mount-Fuji">
                                 <div class = "section2-image-overlay"></div>
-                                <span>Mount Fuji</span>
+                                <span class = "section-inspire__picture-name">Mount Fuji</span>
                             </div>
                             <div class = "Kyoto-element">
                                 <img src="images/kyoto.jpg" alt="Kyoto">
                                 <div class = "section2-image-overlay"></div>
-                                <span>Kyoto</span>
+                                <span class = "section-inspire__picture-name">Kyoto</span>
                             </div>
                         </div> <!--end of row 1-->
-                        <div class="section-inspire__pictures-set-row2">
+                        <div class="section-inspire__pictures-set-row-bottom">
                             <div class = "Tokyo-element">
                                 <img src="images/tokyo.jpg" alt="tokyo">
                                 <div class = "section2-image-overlay"></div>
-                                <span>Tokyo</span>
+                                <span class = "section-inspire__picture-name">Tokyo</span>
                             </div>
                             <div class = "Niigata-element">
                                 <img src="images/niigata.jpg" alt="niigata">
                                 <div class = "section2-image-overlay"></div>
-                                <span>Niigata</span>
+                                <span class = "section-inspire__picture-name">Niigata</span>
                             </div>
                             <div class = "Sapporo-element">
                                 <img src="images/sapporo.jpg" alt="sapporo">
                                 <div class = "section2-image-overlay"></div>
-                                <span>Sapporo</span>
+                                <span class = "section-inspire__picture-name">Sapporo</span>
                             </div>
                         </div> <!--end of row 2-->
-                        
                         <article class = "location-in-focus">
                             <!--location in focus 1-->
-                            <div class = "location-in-focus__set-element"> 
-                                <img src="images/tottori.png" alt="tottori">
+                            <div class = "location-in-focus__set-item"> 
+                                <img class = "location-in-focus__set-item-img"
+                                 src="images/tottori.png" alt="tottori">
                             </div>  
-                            <div class = "location-in-focus__set-element">
+                            <div class = "location-in-focus__set-item">
                                 <div class = "location-in-focus__text-element">
-                                    <div class = "location-in-focus__text-element__header">
+                                    <div class = "location-in-focus__text-header animating-header-full">
                                         Prefecture in Focus: Tottori
                                     </div>
-                                    <div class = "location-in-focus__text-element__info">
+                                    <span class = "location-in-focus__text-element__info">
                                         Jump off balcony, onto stranger's head. Chase ball of string
                                         hide when guests come over. Being gorgeous with belly side
                                         up i could pee on this if i had the energy but under the bed,
                                         for attack the child, open the door, 
-                                    </div>
-                                    <a href="">View Prefecture &#160 &#160 &#160
-                                        <img src="images/arrow.svg" alt="arrow">
+                                    </span>
+                                    <a class="blue-link-with-arrow" href="">
+                                        View Prefecture
                                     </a>
                                 </div>
                             </div>
                                                             <!--location in focus 2-->
-                            <div class = "location-in-focus__set-element">                                                         
+                            <div class = "location-in-focus__set-item">                                                         
                                 <div class = "location-in-focus__text-element">
-                                    <div class = "location-in-focus__text-element__header">
+                                    <div class = "location-in-focus__text-header animating-header-full">
                                         Featured Neighborhood: <br> Kyoto’s Arashiyama
                                     </div>
-                                    <div class = "location-in-focus__text-element__info">
+                                    <span class = "location-in-focus__text-element__info">
                                         Jump off balcony, onto stranger's head. Chase ball of string
                                         hide when guests come over. Being gorgeous with belly side
                                         up i could pee on this if i had the energy but under the bed,
                                         for attack the child, open the door, 
-                                    </div>
-                                    <a href="">View Neighborhood &#160 &#160 &#160
-                                        <img src="images/arrow.svg" alt="arrow">
+                                    </span>
+                                    <a class="blue-link-with-arrow" href="">
+                                        View Neighborhood
                                     </a>
                                 </div>
                             </div>
-                            <div class = "location-in-focus__set-element">  
-                                <img src="images/arashiyama.png" alt="arashiyama">
+                            <div class = "location-in-focus__set-item">  
+                                <img class = "location-in-focus__set-item-img"
+                                 src="images/arashiyama.png" alt="arashiyama">
                             </div>
                         </article>
                     </section>
                     <article>
                         <div class = "today-places-to-visit" id="today-places-to-visit">
-                            <div class = "section-inspire__header">Today top places to visit
-                            </div>
+                            <span class = "section-inspire__header animating-header-half">
+                                Today top places to visit
+                            </span>
                             <div class = "today-places-to-visit__elements-set"> <!--today places to visit set start-->
                                 <div class="today-places-to-visit__element">
-                                    <div class="today-places-to-visit__element__picture">
-                                        <img src="images/today-nagoya.png" alt="nagoya">
-                                        <div class="today-places-to-visit__element__picture-overlay">
+                                    <div class="today-places-to-visit__picture">
+                                        <img class ="today-places-to-visit__picture-img"
+                                            src="images/today-nagoya.png" alt="nagoya">
+                                        <div class="today-places-to-visit__picture-overlay">
                                         </div>
-                                        <div class="today-places-to-visit__element__picture-info">
-                                            <div class="today-places-to-visit__element__picture-info__picture-name">
+                                        <div class="today-places-to-visit__picture-info">
+                                            <div class="today-places-to-visit__picture-name">
                                                 Nagoya
                                             </div>
-                                            <div class="today-places-to-visit__element__picture-info__picture-likes">
+                                            <div class="today-places-to-visit__picture-likes">
                                                 251 &#160
                                                 <img src="images/heart.svg" alt="like-sign"> 
                                                 &#160 &#160 30 &#160
@@ -228,53 +232,53 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="today-places-to-visit__element__text">
+                                    <span class="element__text">
                                         Jump off balcony, onto stranger's head.
                                          Chase ball of string hide when guests come over.
                                           Being gorgeous with belly side up i could pee on this.
-                                    </div>
-                                    <button class = "today-places-to-visit__element__button">
+                                    </span>
+                                    <button class = "element__button animating-button">
                                         See More
                                     </button>
                                 </div>
                                 <div class="today-places-to-visit__element">
-                                    <div class="today-places-to-visit__element__picture">
-                                        <img src="images/today-niigata.png" alt="niigata">
-                                        <div class="today-places-to-visit__element__picture-overlay">
+                                    <div class="today-places-to-visit__picture">
+                                        <img  class ="today-places-to-visit__picture-img"
+                                            src="images/today-niigata.png" alt="niigata">
+                                        <div class="today-places-to-visit__picture-overlay">
                                         </div>
-                                        <div class="today-places-to-visit__element__picture-info">
-                                            <div class="today-places-to-visit__element__picture-info__picture-name">
+                                        <div class="today-places-to-visit__picture-info">
+                                            <div class="today-places-to-visit__picture-name">
                                                 Niigata
                                             </div>
-                                            <div class="today-places-to-visit__element__picture-info__picture-likes">
+                                            <div class="today-places-to-visit__picture-likes">
                                                 251 &#160
                                                 <img src="images/heart.svg" alt="like-sign"> 
                                                 &#160 &#160 30 &#160
                                                 <img src="images/comment.svg" alt="like-sign">
                                             </div>
                                         </div>
-                                        
                                     </div>
-                                     <div class="today-places-to-visit__element__text">
+                                    <span class="element__text">
                                             Jump off balcony, onto stranger's head.
                                              Chase ball of string hide when guests come over.
                                               Being gorgeous with belly side up i could pee on this.
-                                    </div>
-                                    <button class = "today-places-to-visit__element__button">
+                                    </span>
+                                    <button class = "element__button animating-button">
                                             See More
                                     </button>
-                                    
                                 </div>
                                 <div class="today-places-to-visit__element">
-                                    <div class="today-places-to-visit__element__picture">
-                                        <img src="images/today-osaka.png" alt="osaka">
-                                        <div class="today-places-to-visit__element__picture-overlay">
+                                    <div class="today-places-to-visit__picture">
+                                        <img class ="today-places-to-visit__picture-img"
+                                            src="images/today-osaka.png" alt="osaka">
+                                        <div class="today-places-to-visit__picture-overlay">
                                         </div>
-                                        <div class="today-places-to-visit__element__picture-info">
-                                            <div class="today-places-to-visit__element__picture-info__picture-name">
+                                        <div class="today-places-to-visit__picture-info">
+                                            <div class="today-places-to-visit__picture-name">
                                                 Osaka
                                             </div>
-                                            <div class="today-places-to-visit__element__picture-info__picture-likes">
+                                            <div class="today-places-to-visit__picture-likes">
                                                 251 &#160
                                                 <img src="images/heart.svg" alt="like-sign"> 
                                                 &#160 &#160 30 &#160
@@ -282,26 +286,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="today-places-to-visit__element__text">
+                                    <span class="element__text">
                                             Jump off balcony, onto stranger's head.
                                              Chase ball of string hide when guests come over.
                                               Being gorgeous with belly side up i could pee on this.
-                                    </div>
-                                    <button class = "today-places-to-visit__element__button">
+                                    </span>
+                                    <button class = "element__button animating-button">
                                             See More
                                     </button>
-                                    
                                 </div>
                                 <div class="today-places-to-visit__element">
-                                    <div class="today-places-to-visit__element__picture">
-                                        <img src="images/today-saitama.png" alt="saitama">
-                                        <div class="today-places-to-visit__element__picture-overlay">
+                                    <div class="today-places-to-visit__picture">
+                                        <img class ="today-places-to-visit__picture-img"
+                                            src="images/today-saitama.png" alt="saitama">
+                                        <div class="today-places-to-visit__picture-overlay">
                                         </div>
-                                        <div class="today-places-to-visit__element__picture-info">
-                                            <div class="today-places-to-visit__element__picture-info__picture-name">
+                                        <div class="today-places-to-visit__picture-info">
+                                            <div class="today-places-to-visit__picture-name">
                                                 Saitama
                                             </div>
-                                            <div class="today-places-to-visit__element__picture-info__picture-likes">
+                                            <div class="today-places-to-visit__picture-likes">
                                                 251 &#160
                                                 <img src="images/heart.svg" alt="like-sign"> 
                                                 &#160 &#160 30 &#160
@@ -309,26 +313,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="today-places-to-visit__element__text">
+                                    <span class="element__text">
                                             Jump off balcony, onto stranger's head.
                                              Chase ball of string hide when guests come over.
                                               Being gorgeous with belly side up i could pee on this.
-                                    </div>
-                                     <button class = "today-places-to-visit__element__button">
+                                    </span>
+                                     <button class = "element__button animating-button">
                                             See More
                                     </button>
-                                    
                                 </div>
                                 <div class="today-places-to-visit__element">
-                                    <div class="today-places-to-visit__element__picture">
-                                        <img src="images/today-shibuya.png" alt="shibuya">
-                                        <div class="today-places-to-visit__element__picture-overlay">
+                                    <div class="today-places-to-visit__picture">
+                                        <img class ="today-places-to-visit__picture-img"
+                                            src="images/today-shibuya.png" alt="shibuya">
+                                        <div class="today-places-to-visit__picture-overlay">
                                         </div>
-                                        <div class="today-places-to-visit__element__picture-info">
-                                            <div class="today-places-to-visit__element__picture-info__picture-name">
+                                        <div class="today-places-to-visit__picture-info">
+                                            <div class="today-places-to-visit__picture-name">
                                                 Shibuya
                                             </div>
-                                            <div class="today-places-to-visit__element__picture-info__picture-likes">
+                                            <div class="today-places-to-visit__picture-likes">
                                                 251 &#160
                                                 <img src="images/heart.svg" alt="like-sign"> 
                                                 &#160 &#160 30 &#160
@@ -336,26 +340,27 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="today-places-to-visit__element__text">
+                                    <span class="element__text">
                                             Jump off balcony, onto stranger's head.
                                              Chase ball of string hide when guests come over.
                                               Being gorgeous with belly side up i could pee on this.
-                                    </div>
-                                    <button class = "today-places-to-visit__element__button">
+                                    </span>
+                                    <button class = "element__button animating-button">
                                             See More
                                     </button>
                                     
                                 </div>
                                 <div class="today-places-to-visit__element">
-                                    <div class="today-places-to-visit__element__picture"> 
-                                        <img src="images/today-uena.png" alt="uena">
-                                        <div class="today-places-to-visit__element__picture-overlay">
+                                    <div class="today-places-to-visit__picture"> 
+                                        <img class ="today-places-to-visit__picture-img"
+                                             src="images/today-uena.png" alt="uena">
+                                        <div class="today-places-to-visit__picture-overlay">
                                         </div>
-                                        <div class="today-places-to-visit__element__picture-info">
-                                            <div class="today-places-to-visit__element__picture-info__picture-name">
+                                        <div class="today-places-to-visit__picture-info">
+                                            <div class="today-places-to-visit__picture-name">
                                                 Uena
                                             </div>
-                                            <div class="today-places-to-visit__element__picture-info__picture-likes">
+                                            <div class="today-places-to-visit__picture-likes">
                                                 251 &#160
                                                 <img src="images/heart.svg" alt="like-sign"> 
                                                 &#160 &#160 30 &#160
@@ -363,56 +368,54 @@
                                             </div>
                                         </div>
                                     </div>
-                                        <div class="today-places-to-visit__element__text">
+                                        <span class="element__text">
                                                 Jump off balcony, onto stranger's head.
                                                 Chase ball of string hide when guests come over.
                                                 Being gorgeous with belly side up i could pee on this.
-                                        </div>
-                                        <button class = "today-places-to-visit__element__button">
+                                        </span>
+                                        <button class = "element__button animating-button">
                                                 See More
                                         </button>
                                 </div>
                             </div>
                         </div>
-
                     </article> <!--end of today places article-->
-                    <section class = "secion-video" id = "secion-video">
-                        <div class = "section-video__video-set">
-                            <img src="images/video_back.png" alt="video_back">
-
-                            <div class = "section-video__img-overlay">
-                            </div>
-                            <div class = "video-button">
-                                <img src="images/video_sign.svg" alt="video-sign">
-                            </div>
-                        </div>
-                    </section>
                 </div> <!--actual content wrapper--> 
+                <section class = "secion-video" id = "secion-video">
+                    <video class ="video-file" src="videos/japan.mp4"
+                        controls poster="images/video_back_poster.png" >
+                    </video>
+                </section>
                     <footer class = "footer">
                         <div class="footer__set">
                             <div class = "footer__set__logo-element">
-                                <img src="images/logo-odigo.svg" alt="">
+                                <div class = "footer__set__logo-wrapper">
+                                    <a href="#">
+                                        <img class ="footer__set__logo-img"
+                                        src="images/logo-odigo.svg" alt="logo-odigo">
+                                    </a>
+                                </div>
                             </div>
                             <div class="footer__set-element">
-                                <a href="">Company</a>
-                                <a href="">About</a>
-                                <a href="">Team</a>
-                                <a href="">Careers</a>
-                                <a href="">Privacy Policy</a>
+                                <span>Company</span>
+                                <a class = "footer__set__link animating-link" href="">About</a>
+                                <a class = "footer__set__link animating-link" href="">Team</a>
+                                <a class = "footer__set__link animating-link" href="">Careers</a>
+                                <a class = "footer__set__link animating-link" href="">Privacy Policy</a>
                             </div>
                             <div class="footer__set-element">
-                                <a href="">Locations</a>
-                                <a href="">Tokyo</a>
-                                <a href="">Kyoto</a>
-                                <a href="">Osaka</a>
-                                <a href="">Hokkaidu</a>
+                                <span>Locations</span>
+                                <a class = "footer__set__link animating-link" href="">Tokyo</a>
+                                <a class = "footer__set__link animating-link" href="">Kyoto</a>
+                                <a class = "footer__set__link animating-link" href="">Osaka</a>
+                                <a class = "footer__set__link animating-link" href="">Hokkaidu</a>
                             </div>
                             <div class="footer__set-element">
-                                <a href="">Social Media</a>
-                                <a href="">Facebook</a>
-                                <a href="">Twitter</a>
-                                <a href="">Instagram</a>
-                                <a href="">Youtube</a>
+                                <span>Social Media</span>
+                                <a class = "footer__set__link animating-link" href="">Facebook</a>
+                                <a class = "footer__set__link animating-link" href="">Twitter</a>
+                                <a class = "footer__set__link animating-link" href="">Instagram</a>
+                                <a class = "footer__set__link animating-link" href="">Youtube</a>
                             </div>
                         </div>
                     </footer>
